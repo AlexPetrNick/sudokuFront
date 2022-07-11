@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {SudokuComponent} from "./sudoku/sudokuComponent";
+
+type stateType = {
+  complexity: 'easy' | 'normal' | 'hard'
+}
+
+const state:stateType = {
+  complexity: 'normal'
+
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper_all">
+      <div className="wrapper_menu">
+        <div className="wrapper_field_sudoku">
+            <SudokuComponent />
+        </div>
+        <div className="wrapper_menu_user"></div>
+      </div>
     </div>
   );
 }

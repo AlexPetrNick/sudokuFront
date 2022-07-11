@@ -1,3 +1,12 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +44,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.wrapper_all {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.wrapper_menu {
+  border: 1px solid green;
+  width: 1200px;
+  height: 800px;
+  display: flex;
+}
+.wrapper_field_sudoku {
+  border: 1px solid blue;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper_menu_user {
+  border: 1px solid yellow;
+  width: 400px;
 }
